@@ -1,0 +1,66 @@
+:root{
+    --main-color2:hsl(38,69%,59%);
+    --text-color: hsl(38,8%,8%);
+    --font-l:2.375rem;
+    --font-normal: 0.938rem;
+    --font-sm:0.75rem;
+
+}
+@media screen and (min-width:1024px) {
+    :root{
+        --font-l:5rem;
+        --font-normal: 1rem;
+        --font-sm:0.8rem;
+    }
+}
+.home{
+    background-color: var(--main-color2);
+    height: 100vh;
+    display: grid;
+}
+.home-container{
+    display: flex;
+    margin: auto;
+    gap: 5rem;
+}
+.home-data{
+    text-align: center;
+    margin-top: 5rem;
+}
+.home-subtitle{
+    display: block;
+    font-size: x-large;
+
+}
+.home-title{
+    font-size: var(--font-l);
+    margin: 0.1269rem 0;
+}
+.home-button{
+    margin-top: 1.2664rem;
+    border-radius: 3rem;
+    display: inline-block;
+    background-color: var(--text-color);
+    color: #fff;
+    padding: 0.8265rem 1.5rem;
+    transition: 0.5s;
+}
+.home-button:hover{
+    box-shadow: 0 4px 12px hsl(38,8%,8%);
+}
+.home-img img{
+    width: 500px;
+    animation: floaty 1.6s infinite alternate;
+}
+.home-img{
+    justify-self: center;
+}
+.home-shadow{
+    width: 130px;
+    height: 24px;
+    background-color: hsla(37, 22%, 19%, 0.288);
+    margin: 0 auto;
+    border-radius: 50%;
+    filter: blur(7px);
+    animation: shadow 1.6s infinite  infinite alternate ;
+}
